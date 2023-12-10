@@ -15,4 +15,13 @@ add_executable(untitled1 main.c
         ss4/ex2.c
         ss4/ex3.c
         ss4/ex4.c
-        ss4/ex6.c)
+        ss4/ex6.c
+        ss5/inclass.c
+        "ss5/tinh tong.c"
+        ss5/dd.cu
+        ss5/dd.h
+        ss5/ex1.c
+        ss5/ex2.c
+        ss5/ex3.c
+        ss5/ex4.c
+)

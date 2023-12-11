@@ -70,7 +70,9 @@
 				17,
 				18,
 				19,
-				20
+				20,
+				21,
+				22
 			]
 		}
 	],
@@ -126,7 +128,9 @@
 				17,
 				18,
 				19,
-				20
+				20,
+				21,
+				22
 			]
 		},
 		{
@@ -261,6 +265,18 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "ss5/ex4.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ss6/ex1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ss6/ex2.c",
 			"sourceGroupIndex" : 0
 		}
 	],

@@ -175,6 +175,12 @@ build CMakeFiles/untitled1.dir/ss6/ex2.c.obj: C_COMPILER__untitled1_unscanned_De
   OBJECT_DIR = CMakeFiles\untitled1.dir
   OBJECT_FILE_DIR = CMakeFiles\untitled1.dir\ss6
 
+build CMakeFiles/untitled1.dir/ss6/d.c.obj: C_COMPILER__untitled1_unscanned_Debug C$:/untitled1/ss6/d.c || cmake_object_order_depends_target_untitled1
+  DEP_FILE = CMakeFiles\untitled1.dir\ss6\d.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\untitled1.dir
+  OBJECT_FILE_DIR = CMakeFiles\untitled1.dir\ss6
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target untitled1
@@ -183,7 +189,7 @@ build CMakeFiles/untitled1.dir/ss6/ex2.c.obj: C_COMPILER__untitled1_unscanned_De
 #############################################
 # Link the executable untitled1.exe
 
-build untitled1.exe: C_EXECUTABLE_LINKER__untitled1_Debug CMakeFiles/untitled1.dir/main.c.obj CMakeFiles/untitled1.dir/ss3/ex1.c.obj CMakeFiles/untitled1.dir/ss5/1.c.obj CMakeFiles/untitled1.dir/ss3/while.c.obj CMakeFiles/untitled1.dir/ss3/ex2.c.obj CMakeFiles/untitled1.dir/ss3/ex3.c.obj CMakeFiles/untitled1.dir/ss3/ex4.c.obj CMakeFiles/untitled1.dir/ss3/ex6.c.obj CMakeFiles/untitled1.dir/ss4/ex1.c.obj CMakeFiles/untitled1.dir/ss4/ex2.c.obj CMakeFiles/untitled1.dir/ss4/ex3.c.obj CMakeFiles/untitled1.dir/ss4/ex4.c.obj CMakeFiles/untitled1.dir/ss4/ex6.c.obj CMakeFiles/untitled1.dir/ss5/inclass.c.obj CMakeFiles/untitled1.dir/ss5/tinh_tong.c.obj CMakeFiles/untitled1.dir/ss5/ex1.c.obj CMakeFiles/untitled1.dir/ss5/ex2.c.obj CMakeFiles/untitled1.dir/ss5/ex3.c.obj CMakeFiles/untitled1.dir/ss5/ex4.c.obj CMakeFiles/untitled1.dir/ss6/ex1.c.obj CMakeFiles/untitled1.dir/ss6/ex2.c.obj
+build untitled1.exe: C_EXECUTABLE_LINKER__untitled1_Debug CMakeFiles/untitled1.dir/main.c.obj CMakeFiles/untitled1.dir/ss3/ex1.c.obj CMakeFiles/untitled1.dir/ss5/1.c.obj CMakeFiles/untitled1.dir/ss3/while.c.obj CMakeFiles/untitled1.dir/ss3/ex2.c.obj CMakeFiles/untitled1.dir/ss3/ex3.c.obj CMakeFiles/untitled1.dir/ss3/ex4.c.obj CMakeFiles/untitled1.dir/ss3/ex6.c.obj CMakeFiles/untitled1.dir/ss4/ex1.c.obj CMakeFiles/untitled1.dir/ss4/ex2.c.obj CMakeFiles/untitled1.dir/ss4/ex3.c.obj CMakeFiles/untitled1.dir/ss4/ex4.c.obj CMakeFiles/untitled1.dir/ss4/ex6.c.obj CMakeFiles/untitled1.dir/ss5/inclass.c.obj CMakeFiles/untitled1.dir/ss5/tinh_tong.c.obj CMakeFiles/untitled1.dir/ss5/ex1.c.obj CMakeFiles/untitled1.dir/ss5/ex2.c.obj CMakeFiles/untitled1.dir/ss5/ex3.c.obj CMakeFiles/untitled1.dir/ss5/ex4.c.obj CMakeFiles/untitled1.dir/ss6/ex1.c.obj CMakeFiles/untitled1.dir/ss6/ex2.c.obj CMakeFiles/untitled1.dir/ss6/d.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\untitled1.dir

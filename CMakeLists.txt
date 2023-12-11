@@ -26,4 +26,5 @@ add_executable(untitled1 main.c
         ss5/ex4.c
         ss6/ex1.c
         ss6/ex2.c
+        ss6/d.c
 )

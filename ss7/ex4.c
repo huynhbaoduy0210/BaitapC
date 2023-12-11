@@ -1,21 +1,21 @@
 #include <stdio.h>
 
-// Hàm kiểm tra số nguyên tố
+
 int isPrime(int num) {
     if (num < 2) {
-        return 0; // Không phải số nguyên tố
+        return 0;
     }
     for (int i = 2; i * i <= num; ++i) {
         if (num % i == 0) {
-            return 0; // Không phải số nguyên tố
+            return 0;
         }
     }
-    return 1; // Là số nguyên tố
+    return 1;
 }
 
-// Hàm kiểm tra số hoàn hảo
+
 int isPerfect(int num) {
-    int sum = 1; // 1 luôn là ước số của mọi số
+    int sum = 1;
     for (int i = 2; i * i <= num; ++i) {
         if (num % i == 0) {
             sum += i;
@@ -24,10 +24,10 @@ int isPerfect(int num) {
             }
         }
     }
-    return sum == num; // Trả về 1 nếu là số hoàn hảo, ngược lại trả về 0
+    return sum == num;
 }
 
-// Hàm tính giai thừa
+
 long long factorial(int num) {
     if (num == 0 || num == 1) {
         return 1;
@@ -35,7 +35,7 @@ long long factorial(int num) {
     return num * factorial(num - 1);
 }
 
-// Hàm in số đảo ngược
+
 void reverseNumber(int num) {
     int reversed = 0;
     while (num > 0) {
@@ -49,12 +49,14 @@ void reverseNumber(int num) {
 int main() {
     int n, choice;
 
-    // Nhập số nguyên từ bàn phím
+
     printf("Nhap so nguyen n: ");
     scanf("%d", &n);
 
-    do {
-        // Hiển thị menu
+
+    do
+    {
+
         printf("\nINTEGER NUMBER\n");
         printf("1. In ra day so co gia tri nho hon hoac bang n va tinh tong\n");
         printf("2. In ra va dem cac so chia het cho 3 nho hon n\n");
@@ -66,11 +68,11 @@ int main() {
         printf("8. In ra cac so nguyen to tu 1 den n\n");
         printf("9. Thoat\n");
 
-        // Nhập lựa chọn từ người dùng
+
         printf("Lua chon cua ban: ");
         scanf("%d", &choice);
 
-        // Thực hiện chức năng tương ứng với lựa chọn
+
         switch (choice) {
             case 1:
                 printf("Day so co gia tri nho hon hoac bang %d va tong la: ", n);
@@ -139,7 +141,7 @@ int main() {
                 printf("Lua chon khong hop le. Vui long nhap lai.\n");
                 break;
         }
-    } while (choice != 9);  // Lặp lại cho đến khi người dùng chọn thoát
+    } while (choice != 9);
 
     return 0;
 }

@@ -1,18 +1,33 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main()
-{
-    int n; scanf("%d",&n);
-    int a[n];
-    for(int i=0;i<n;i++){
-        printf("nhap so phan tu %d: ", i+1);
-        scanf("%d",&a[i]);
+int main() {
+    int n;
+    printf("Nhap so phan tu cua mang: ");
+    scanf("%d", &n);
+
+    int arr[n];
+
+    printf("Nhap gia tri cho cac phan tu cua mang:\n");
+    for (int i = 0; i < n; i++) {
+        printf("arr[%d] = ", i);
+        scanf("%d", &arr[i]);
     }
-    int max=a[0];
-    for(int i=0;i<n;i++) {
-        if (a[i] > max) {
-            max = a[i];
+
+    int max = arr[0];
+    int min = arr[0];
+
+    for (int i = 1; i < n; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
         }
-    }  printf("%d", max);
+
+        if (arr[i] < min) {
+            min = arr[i];
+        }
+    }
+
+    printf("Gia tri lon nhat trong mang la: %d\n", max);
+    printf("Gia tri nho nhat trong mang la: %d\n", min);
+
     return 0;
 }

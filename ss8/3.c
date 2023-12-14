@@ -24,7 +24,6 @@ int main() {
             sum += findNumber;
         }
     }
-
     printf("Tong cac phan tu co gia tri bang %d la: %d\n", findNumber, sum);
 
     return 0;

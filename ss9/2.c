@@ -66,4 +66,3 @@ int main() {
 
     } while (nhapso != 0);
     return 0;
-}

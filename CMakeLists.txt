@@ -29,4 +29,8 @@ add_executable(untitled1 main.c
         ss6/d.c
         "ss7/mang 2 chieu.c"
         ss14/5.c
+        ss13/1.c
+        ss13/2.c
+        ss13/3.c
+        ss13/4.c
 )

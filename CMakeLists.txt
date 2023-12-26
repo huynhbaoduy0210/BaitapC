@@ -33,4 +33,5 @@ add_executable(untitled1 main.c
         ss13/2.c
         ss13/3.c
         ss13/4.c
+        contrto.c
 )

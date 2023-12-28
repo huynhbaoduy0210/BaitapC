@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include<stdio.h>
 #include <string.h>
 
 struct City {
@@ -10,6 +10,7 @@ struct City {
 
 int main() {
     struct City cities[3];
+            cities[3];
     int i, maxIncomeIndex = 0, maxLiteracyIndex = 0;
 
 

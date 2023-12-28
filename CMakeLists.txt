@@ -34,4 +34,7 @@ add_executable(untitled1 main.c
         ss13/3.c
         ss13/4.c
         contrto.c
+        baitap/2.c
+        baitap/3.cu
+        "de so 4/PTIT_KS2023C_HuynhBaoDuy.c"
 )

@@ -22,7 +22,7 @@ CD inputCD() {
     printf("Nhap noi dung: ");
     scanf("%s", cd.content);
     printf("Nhap trang thai: ");
-     scanf("%d", &cd.status);
+    scanf("%d", &cd.status);
     return cd;
 }
 
@@ -75,6 +75,7 @@ void updateCD(CD* cdList, int size) {
         printf("Khong tim thay CD co ten %s\n", name);
     }
 }
+
 CD* deleteCD(CD* cdList, int* size) {
     char name[50];
     printf("Nhap ten cua CD muon xoa: ");
@@ -88,6 +89,10 @@ CD* deleteCD(CD* cdList, int* size) {
     }
     if (index != -1) {
         CD* newList = (CD*)malloc((*size - 1) * sizeof(CD));
+        if (newList == NULL) {
+            printf("Memory allocation failed.\n");
+            exit(EXIT_FAILURE);
+        }
         int j = 0;
         for (int i = 0; i < *size; i++) {
             if (i != index) {
@@ -104,6 +109,7 @@ CD* deleteCD(CD* cdList, int* size) {
         return cdList;
     }
 }
+
 void sortCDList(CD* cdList, int size) {
     for (int i = 1; i < size; i++) {
         CD key = cdList[i];
@@ -115,10 +121,11 @@ void sortCDList(CD* cdList, int size) {
         cdList[j + 1] = key;
     }
 }
+
 void searchCDByName(CD* cdList, int size) {
     char name[50];
     printf("Nhap ten cua CD muon tim kiem: ");
-    scanf("%s", name);
+    scanf("%49s", name);
     sortCDList(cdList, size);
     int left = 0;
     int right = size - 1;
@@ -147,9 +154,7 @@ void searchCDByName(CD* cdList, int size) {
     }
 }
 
-
 void searchCDByStatus(CD* cdList, int size) {
-
     bool status;
     printf("Nhap trang thai muon tim kiem: ");
     scanf("%d", &status);
@@ -166,6 +171,7 @@ void searchCDByStatus(CD* cdList, int size) {
         printf("Khong tim thay CD nao co trang thai %d\n", status);
     }
 }
+
 void menu(CD* cdList, int size) {
     // In ra menu
     printf("************************MENU**************************\n");
@@ -206,6 +212,7 @@ void menu(CD* cdList, int size) {
             break;
         case 8:
             printf("Cam on ban da su dung chuong trinh. Hen gap lai.\n");
+            free(cdList);
             exit(0);
             break;
         default:
@@ -214,6 +221,7 @@ void menu(CD* cdList, int size) {
     }
     menu(cdList, size);
 }
+
 int main() {
     int size = 2;
     CD* cdList = (CD*)malloc(size * sizeof(CD));
@@ -231,3 +239,4 @@ int main() {
     free(cdList);
     return 0;
 }
+

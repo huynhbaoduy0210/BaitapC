@@ -6,7 +6,7 @@
 int main()
 {
     FILE *fin = fopen("sinhvien.txt", "r");
-    FILE *fout = fopen("sinhvien_out.txt", "r");
+    FILE *fout = fopen("sinhvien_out.txt", "w");
     if (fin == NULL || fout == NULL)
     {
         printf("khong the mo file.\n");
@@ -22,7 +22,6 @@ int main()
     fputs(line, fout);
     while (fgets(line, 100, fin) != NULL)
     {
-        // Xóa ký tự xuống dòng ở cuối line
         len = strlen(line);
         if (line[len - 1] == '\n')
             line[len - 1] = '\0';

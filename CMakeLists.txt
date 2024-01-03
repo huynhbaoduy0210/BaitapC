@@ -37,4 +37,5 @@ add_executable(untitled1 main.c
         baitap/2.c
         baitap/3.cu
         "de so 4/PTIT_KS2023C_HuynhBaoDuy.c"
+        "tren lop/doc file.c"
 )

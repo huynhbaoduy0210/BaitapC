@@ -39,4 +39,7 @@ add_executable(untitled1 main.c
         "de so 4/PTIT_KS2023C_HuynhBaoDuy.c"
         "tren lop/doc file.c"
         "tren lop/doc ghi file bt2.c"
+        "Project/sinh vien.c"
+        "Project/sinh vien 3.c"
+        "sinh vien.c"
 )

@@ -25,7 +25,7 @@ int main() {
     int n = 0;
     int i;
 
-    // Mở file sinhvien.txt ở chế độ đọc và file sinhvien_out.txt ở chế độ ghi
+
     FILE *fin = fopen("sinhvien.txt", "r");
     FILE *fout = fopen("sinhvien_out.txt", "w");
     if (fin == NULL || fout == NULL) {

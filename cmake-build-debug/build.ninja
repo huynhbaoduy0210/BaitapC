@@ -253,8 +253,8 @@ build CMakeFiles/untitled1.dir/Project/sinh_vien.c.obj: C_COMPILER__untitled1_un
   OBJECT_DIR = CMakeFiles\untitled1.dir
   OBJECT_FILE_DIR = CMakeFiles\untitled1.dir\Project
 
-build CMakeFiles/untitled1.dir/Project/sinh_vien_3.c.obj: C_COMPILER__untitled1_unscanned_Debug C$:/untitled1/Project/sinh$ vien$ 3.c || cmake_object_order_depends_target_untitled1
-  DEP_FILE = CMakeFiles\untitled1.dir\Project\sinh_vien_3.c.obj.d
+build CMakeFiles/untitled1.dir/Project/Sinh_vien_chinh_thuc.c.obj: C_COMPILER__untitled1_unscanned_Debug C$:/untitled1/Project/Sinh$ vien$ chinh$ thuc.c || cmake_object_order_depends_target_untitled1
+  DEP_FILE = CMakeFiles\untitled1.dir\Project\Sinh_vien_chinh_thuc.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\untitled1.dir
   OBJECT_FILE_DIR = CMakeFiles\untitled1.dir\Project
@@ -265,6 +265,12 @@ build CMakeFiles/untitled1.dir/sinh_vien.c.obj: C_COMPILER__untitled1_unscanned_
   OBJECT_DIR = CMakeFiles\untitled1.dir
   OBJECT_FILE_DIR = CMakeFiles\untitled1.dir
 
+build CMakeFiles/untitled1.dir/Project/demo.c.obj: C_COMPILER__untitled1_unscanned_Debug C$:/untitled1/Project/demo.c || cmake_object_order_depends_target_untitled1
+  DEP_FILE = CMakeFiles\untitled1.dir\Project\demo.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\untitled1.dir
+  OBJECT_FILE_DIR = CMakeFiles\untitled1.dir\Project
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target untitled1
@@ -273,7 +279,7 @@ build CMakeFiles/untitled1.dir/sinh_vien.c.obj: C_COMPILER__untitled1_unscanned_
 #############################################
 # Link the executable untitled1.exe
 
-build untitled1.exe: C_EXECUTABLE_LINKER__untitled1_Debug CMakeFiles/untitled1.dir/main.c.obj CMakeFiles/untitled1.dir/ss3/ex1.c.obj CMakeFiles/untitled1.dir/ss5/1.c.obj CMakeFiles/untitled1.dir/ss3/while.c.obj CMakeFiles/untitled1.dir/ss3/ex2.c.obj CMakeFiles/untitled1.dir/ss3/ex3.c.obj CMakeFiles/untitled1.dir/ss3/ex4.c.obj CMakeFiles/untitled1.dir/ss3/ex6.c.obj CMakeFiles/untitled1.dir/ss4/ex1.c.obj CMakeFiles/untitled1.dir/ss4/ex2.c.obj CMakeFiles/untitled1.dir/ss4/ex3.c.obj CMakeFiles/untitled1.dir/ss4/ex4.c.obj CMakeFiles/untitled1.dir/ss4/ex6.c.obj CMakeFiles/untitled1.dir/ss5/inclass.c.obj CMakeFiles/untitled1.dir/ss5/tinh_tong.c.obj CMakeFiles/untitled1.dir/ss5/ex1.c.obj CMakeFiles/untitled1.dir/ss5/ex2.c.obj CMakeFiles/untitled1.dir/ss5/ex3.c.obj CMakeFiles/untitled1.dir/ss5/ex4.c.obj CMakeFiles/untitled1.dir/ss6/ex1.c.obj CMakeFiles/untitled1.dir/ss6/ex2.c.obj CMakeFiles/untitled1.dir/ss6/d.c.obj CMakeFiles/untitled1.dir/ss7/mang_2_chieu.c.obj CMakeFiles/untitled1.dir/ss14/5.c.obj CMakeFiles/untitled1.dir/ss13/1.c.obj CMakeFiles/untitled1.dir/ss13/2.c.obj CMakeFiles/untitled1.dir/ss13/3.c.obj CMakeFiles/untitled1.dir/ss13/4.c.obj CMakeFiles/untitled1.dir/contrto.c.obj CMakeFiles/untitled1.dir/baitap/2.c.obj CMakeFiles/untitled1.dir/de_so_4/PTIT_KS2023C_HuynhBaoDuy.c.obj CMakeFiles/untitled1.dir/tren_lop/doc_file.c.obj CMakeFiles/untitled1.dir/tren_lop/doc_ghi_file_bt2.c.obj CMakeFiles/untitled1.dir/Project/sinh_vien.c.obj CMakeFiles/untitled1.dir/Project/sinh_vien_3.c.obj CMakeFiles/untitled1.dir/sinh_vien.c.obj
+build untitled1.exe: C_EXECUTABLE_LINKER__untitled1_Debug CMakeFiles/untitled1.dir/main.c.obj CMakeFiles/untitled1.dir/ss3/ex1.c.obj CMakeFiles/untitled1.dir/ss5/1.c.obj CMakeFiles/untitled1.dir/ss3/while.c.obj CMakeFiles/untitled1.dir/ss3/ex2.c.obj CMakeFiles/untitled1.dir/ss3/ex3.c.obj CMakeFiles/untitled1.dir/ss3/ex4.c.obj CMakeFiles/untitled1.dir/ss3/ex6.c.obj CMakeFiles/untitled1.dir/ss4/ex1.c.obj CMakeFiles/untitled1.dir/ss4/ex2.c.obj CMakeFiles/untitled1.dir/ss4/ex3.c.obj CMakeFiles/untitled1.dir/ss4/ex4.c.obj CMakeFiles/untitled1.dir/ss4/ex6.c.obj CMakeFiles/untitled1.dir/ss5/inclass.c.obj CMakeFiles/untitled1.dir/ss5/tinh_tong.c.obj CMakeFiles/untitled1.dir/ss5/ex1.c.obj CMakeFiles/untitled1.dir/ss5/ex2.c.obj CMakeFiles/untitled1.dir/ss5/ex3.c.obj CMakeFiles/untitled1.dir/ss5/ex4.c.obj CMakeFiles/untitled1.dir/ss6/ex1.c.obj CMakeFiles/untitled1.dir/ss6/ex2.c.obj CMakeFiles/untitled1.dir/ss6/d.c.obj CMakeFiles/untitled1.dir/ss7/mang_2_chieu.c.obj CMakeFiles/untitled1.dir/ss14/5.c.obj CMakeFiles/untitled1.dir/ss13/1.c.obj CMakeFiles/untitled1.dir/ss13/2.c.obj CMakeFiles/untitled1.dir/ss13/3.c.obj CMakeFiles/untitled1.dir/ss13/4.c.obj CMakeFiles/untitled1.dir/contrto.c.obj CMakeFiles/untitled1.dir/baitap/2.c.obj CMakeFiles/untitled1.dir/de_so_4/PTIT_KS2023C_HuynhBaoDuy.c.obj CMakeFiles/untitled1.dir/tren_lop/doc_file.c.obj CMakeFiles/untitled1.dir/tren_lop/doc_ghi_file_bt2.c.obj CMakeFiles/untitled1.dir/Project/sinh_vien.c.obj CMakeFiles/untitled1.dir/Project/Sinh_vien_chinh_thuc.c.obj CMakeFiles/untitled1.dir/sinh_vien.c.obj CMakeFiles/untitled1.dir/Project/demo.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\untitled1.dir

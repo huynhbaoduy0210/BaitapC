@@ -40,6 +40,7 @@ add_executable(untitled1 main.c
         "tren lop/doc file.c"
         "tren lop/doc ghi file bt2.c"
         "Project/sinh vien.c"
-        "Project/sinh vien 3.c"
+        "Project/Sinh vien chinh thuc.c"
         "sinh vien.c"
+        Project/demo.c
 )

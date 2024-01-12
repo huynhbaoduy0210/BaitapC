@@ -14,6 +14,10 @@ typedef struct {
     float diemHoa;
 } SinhVien;
 
+int masinhvien(char *maSV) {
+    return strlen(maSV) == 5;
+}
+
 void chuanHoaTen(char ten[]) {
     int length = strlen(ten);
     if (length > 0) {
@@ -41,14 +45,14 @@ void hienThiDanhSach(SinhVien danhSach[], int soLuong) {
 
 
 void ghiDanhSach(SinhVien danhSach[], int soLuong) {
-    FILE *file = fopen("student.txt", "w");
+    FILE *file = fopen("student.txt", "w    ");
     if (file == NULL) {
         printf("Loi mo file.\n");
         exit(1);
     }
 
     for (int i = 0; i < soLuong; i++) {
-        fprintf(file, "%s %s %s %.2f %.2f %.2f\n",
+        fprintf(file, "Ma sv: %s Ho ten: %s Lop: %s Diem toan: %.2f Diem ly: %.2f Diem hoa: %.2f\n",
                 danhSach[i].maSV,
                 danhSach[i].hoTen,
                 danhSach[i].lop,
@@ -83,13 +87,14 @@ void docDanhSach(SinhVien danhSach[], int *soLuong) {
 
 void themSinhVien(SinhVien danhSach[], int *soLuong) {
     if (*soLuong < MAX_STUDENTS) {
-        SinhVien sv;
+         SinhVien sv;
 
         printf("Nhap ma sinh vien (5 ky tu): ");
         scanf("%5s", sv.maSV);
 
+
         printf("Nhap ho ten sinh vien (5-30 ky tu): ");
-        scanf(" %[^\n]s", sv.hoTen);
+        scanf(" %[^\n]", sv.hoTen);
         chuanHoaTen(sv.hoTen);
 
         printf("Nhap lop (max 10 ky tu): ");
@@ -110,6 +115,78 @@ void themSinhVien(SinhVien danhSach[], int *soLuong) {
         ghiDanhSach(danhSach, *soLuong);
     } else {
         printf("Danh sach sinh vien da day, khong the them moi.\n");
+    }
+}
+void suaThongTinSinhVien(SinhVien danhSach[], int soLuong) {
+    char maSV[6];
+    printf("Nhap ma sinh vien can sua thong tin: ");
+    scanf("%5s", maSV);
+
+    int timThay = 0;
+    for (int i = 0; i < soLuong; i++) {
+        if (strcmp(danhSach[i].maSV, maSV) == 0) {
+            SinhVien sv;
+            strcpy(sv.maSV, danhSach[i].maSV); // sao chép mã sinh viên
+            danhSach[i] = sv; // gán lại phần tử trong mảng
+
+
+            printf("Nhap ho ten moi (5-30 ky tu): ");
+            scanf(" %30[^\n]s", sv.hoTen);
+            chuanHoaTen(sv.hoTen);
+
+            printf("Nhap lop moi (max 10 ky tu): ");
+            scanf("%10s", sv.lop);
+
+            do {
+                printf("Nhap diem toan moi (0-10): ");
+                scanf("%f", &sv.diemToan);
+            } while (sv.diemToan < 0 || sv.diemToan > 10);
+
+            do {
+                printf("Nhap diem ly moi (0-10): ");
+                scanf("%f", &sv.diemLy);
+            } while (sv.diemLy < 0 || sv.diemLy > 10);
+
+            do {
+                printf("Nhap diem hoa moi (0-10): ");
+                scanf("%f", &sv.diemHoa);
+            } while (sv.diemHoa < 0 || sv.diemHoa > 10);
+
+            danhSach[i] = sv;
+            timThay = 1;
+
+            ghiDanhSach(danhSach, soLuong);
+            printf("Da cap nhat thong tin sinh vien.\n");
+            break;
+        }
+    }
+
+    if (!timThay) {
+        printf("Khong tim thay sinh vien co ma %s.\n", maSV);
+    }
+}
+void xoaSinhVien(SinhVien danhSach[], int *soLuong) {
+    char maSV[6];
+    printf("Nhap ma sinh vien can xoa: ");
+    scanf("%5s", maSV);
+
+    int timThay = 0;
+    for (int i = 0; i < *soLuong; i++) {
+        if (strcmp(danhSach[i].maSV, maSV) == 0) {
+            for (int j = i; j < *soLuong - 1; j++) {
+                danhSach[j] = danhSach[j + 1];
+            }
+            (*soLuong)--;
+
+            ghiDanhSach(danhSach, *soLuong);
+            printf("Da xoa sinh vien co ma %s.\n", maSV);
+            timThay = 1;
+            break;
+        }
+    }
+
+    if (!timThay) {
+        printf("Khong tim thay sinh vien co ma %s.\n", maSV);
     }
 }
 
@@ -172,16 +249,17 @@ int main() {
     int soLuong = 0;
 
     docDanhSach(danhSach, &soLuong);
-
     int luaChon;
     do {
         printf("\nMENU:\n");
         printf("1. Them sinh vien\n");
         printf("2. Hien thi danh sach sinh vien\n");
-        printf("3. Sap xep sinh vien theo diem trung binh tang dan\n");
-        printf("4. Sap xep sinh vien theo diem trung binh giam dan\n");
-        printf("5. Tim kiem sinh vien theo lop\n");
-        printf("6. Tim kiem sinh vien theo diem\n");
+        printf("3. Sua thong tin sinh vien\n");
+        printf("4. Xoa sinh vien \n");
+        printf("5. Sap xep sinh vien theo diem trung tang tang dan \n");
+        printf("6. Sap xep sinh vien theo diem trung binh giam dan\n");
+        printf("7. Tim kiem sinh vien theo lop\n");
+        printf("8. Tim kiem sinh vien theo diem (max-min)\n");
         printf("0. Thoat\n");
         printf("Nhap lua chon cua ban: ");
         scanf("%d", &luaChon);
@@ -194,17 +272,23 @@ int main() {
                 hienThiDanhSach(danhSach, soLuong);
                 break;
             case 3:
+                suaThongTinSinhVien(danhSach, soLuong);
+                break;
+            case 4:
+                xoaSinhVien(danhSach, &soLuong);
+                break;
+            case 5:
                 sapXepTheoDiem(danhSach, soLuong, 0);
                 printf("Da sap xep tang dan theo diem trung binh.\n");
                 break;
-            case 4:
+            case 6:
                 sapXepTheoDiem(danhSach, soLuong, 1);
                 printf("Da sap xep giam dan theo diem trung binh.\n");
                 break;
-            case 5:
+            case 7:
                 timKiemTheoLop(danhSach, soLuong);
                 break;
-            case 6:
+            case 8:
                 timKiemTheoDiem(danhSach, soLuong);
                 break;
             case 0:
@@ -215,6 +299,6 @@ int main() {
                 printf("Lua chon khong hop le. Vui long nhap lai.\n");
         }
     } while (luaChon != 0);
-
     return 0;
+
 }

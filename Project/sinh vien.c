@@ -88,7 +88,7 @@ void themSinhVien(SinhVien danhSach[], int *soLuong) {
         scanf("%5s", sv.maSV);
 
         printf("Nhap ho ten sinh vien (5-30 ky tu): ");
-        scanf("%30s", sv.hoTen);
+        scanf("%[^\n]s", sv.hoTen);
         chuanHoaTen(sv.hoTen);
 
         printf("Nhap lop (max 10 ky tu): ");

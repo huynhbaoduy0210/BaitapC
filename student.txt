@@ -1,4 +1,2 @@
-0210 Huynhbaoduy ptit 10.00 9.00 8.00
-2 Songthuong ptit 9.00 8.00 7.00
-12345 Huynh Bao Duy ptit 9.00 10.00 9.00
-12345 Huynh Bao Duy ptit 10.00 10.00 10.00
+Ma sv: m01 Ho ten: Phan Nhut Hao Lop: ptit1 Diem toan: 9.00 Diem ly: 9.00 Diem hoa: 9.00
+Ma sv: m02 Ho ten: Huynh Bao Duy Lop: 5 Diem toan: 4.00 Diem ly: 3.00 Diem hoa: 2.00

@@ -1,0 +1,30 @@
+.one{
+width: 100px;
+height: 100px;
+backgorund: red;
+margin-right: 3px;
+}
+.two{
+    width: 100px;
+    height: 100px;
+    background: green;
+    margin-right: 3px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+.three{
+    width: 100px;
+    height: 100px;
+    background: red;
+    margin-right: 3px;
+}
+.four{
+    width: 100px;
+    height:100px;
+    background: red;
+    margin-left: 3px;
+}
+.container{
+    display: flex;
+}

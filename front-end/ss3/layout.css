@@ -2,12 +2,8 @@
     background-image: url(e.jpg);   
     background-size: cover;
     color: white;
-    padding: 200px;
+   padding: 200px;
   }
-h2 {
-    color: #58257b
-    
-}
 
 ul {
     list-style-type: none;
@@ -54,51 +50,46 @@ li a:hover {
 }
 
 
-.item1 {
+.personal-details__bottom--android {
     grid-area: item1;
     text-align: center;
     background-color: rgb(145, 145, 208)
     
 }
-.item2 {
+.personal-details__bottom--Angular {
     grid-area: item2;
 }
-.item3 {
+.personal-details__bottom--Bootstrap{
     grid-area: item3;
     text-align: center;
     background-color: pink;
 }
-.item4 {
+.personal-details__bottom--Vue {
     grid-area: item4;
     text-align: center;
     background-color: pink;
 }
-.item5 {
+.personal-details__bottom--React {
     grid-area: item5;
 }
-.item6 {
+.personal-details__bottom--Mongodb {
     grid-area: item6;
     text-align: center;
     background-color: rgb(145, 145, 208)
 }
-.item7 {
+.personal-details__bottom--Lavarel {
     grid-area: item7;
 }
-.item8 {
+.personal-details__bottom--Mongodb {
     grid-area: item8;
     
     background-color: rgb(145, 145, 208)
 }
-.item9 {
-    grid-area: item9;
-}
 .grid-container {
     display: grid;
     grid-template-areas: 
-        'item0 item0 item0 item0 '
-        'item1 item2 item2 item3'
-        'item4 item4 item5 item6'
-        'item7 item8 item9 item9';
+        'item1 item2 item3 item 4 item5'
+        'item6 item7 item8'
 }
 img {
     width: 100%;
